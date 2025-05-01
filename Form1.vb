@@ -27,7 +27,7 @@ Public Class Form1
     Public hostIP As String
     Public intermittentPing As Boolean
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
 
         computer.Open()
         computer.CPUEnabled = True
