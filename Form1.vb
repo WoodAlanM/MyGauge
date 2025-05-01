@@ -344,6 +344,7 @@ Public Class Form1
             If Not PingHost(My.Settings.HostName) Then
                 MessageBox.Show("The host has become unavailable. Please ensure the host is powered on and connected to the network.")
                 statLabelHost.Text = "Host: (" + My.Settings.HostName + ") UNAVAILABLE."
+                btnControlServer.Enabled = False
             End If
         End If
 
@@ -414,6 +415,7 @@ Public Class Form1
                     MessageBox.Show("The entered hostname resolves to the IP (" + gaugeIP + ").")
                     My.Settings.IPAddress = gaugeIP
                     My.Settings.Save()
+                    btnControlServer.Enabled = True
                 End If
             End If
         End If
