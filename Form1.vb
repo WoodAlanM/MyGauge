@@ -85,11 +85,15 @@ Public Class Form1
         Dim oldHostname As String = My.Settings.HostName
         Dim hostnameIP As String = GetIPFromHostname(oldHostname)
 
-        If hostnameIP = "noip" Or hostnameIP.StartsWith("Error") Then
+        If hostnameIP = "noip" Or hostnameIP.StartsWith("Error") Or oldHostname = "" Then
+            If oldHostname = "" Then
+                MessageBox.Show("You have not set a host gauge. Please do so under File > Set Gauge Hostname.")
+                statLabelHost.Text = "No host set. Set host at File > Set Gauge Hostname."
+            End If
             If oldHostname <> "" Then
                 MessageBox.Show("The previously used hostname does not have an associated IP address. Please ensure the host is online and connected to the network.")
+                statLabelHost.Text = "Host: (" + oldHostname + ") UNAVAILABLE."
             End If
-            statLabelHost.Text = "Host: (" + oldHostname + ") UNAVAILABLE."
         Else
             ' if ip is different change it
             If hostnameIP <> My.Settings.IPAddress Then
@@ -407,6 +411,7 @@ Public Class Form1
                     MessageBox.Show("The hostname you entered does not have an associated IP address.")
                 Else
                     ' Set new ip
+                    MessageBox.Show("The entered hostname resolves to the IP (" + gaugeIP + ").")
                     My.Settings.IPAddress = gaugeIP
                     My.Settings.Save()
                 End If

@@ -69,7 +69,7 @@ Partial Class Form1
         Me.txtBoxGauge1Label.Location = New System.Drawing.Point(6, 115)
         Me.txtBoxGauge1Label.Name = "txtBoxGauge1Label"
         Me.txtBoxGauge1Label.Size = New System.Drawing.Size(177, 20)
-        Me.txtBoxGauge1Label.TabIndex = 4
+        Me.txtBoxGauge1Label.TabIndex = 1
         Me.txtBoxGauge1Label.Text = "Gauge 1"
         '
         'lblGauge1Label
@@ -115,7 +115,7 @@ Partial Class Form1
         Me.btnControlServer.Location = New System.Drawing.Point(12, 215)
         Me.btnControlServer.Name = "btnControlServer"
         Me.btnControlServer.Size = New System.Drawing.Size(388, 34)
-        Me.btnControlServer.TabIndex = 2
+        Me.btnControlServer.TabIndex = 5
         Me.btnControlServer.Text = "Start Temp Server"
         Me.btnControlServer.UseVisualStyleBackColor = True
         '
@@ -141,7 +141,7 @@ Partial Class Form1
         Me.txtBoxGauge2Label.Location = New System.Drawing.Point(6, 115)
         Me.txtBoxGauge2Label.Name = "txtBoxGauge2Label"
         Me.txtBoxGauge2Label.Size = New System.Drawing.Size(177, 20)
-        Me.txtBoxGauge2Label.TabIndex = 4
+        Me.txtBoxGauge2Label.TabIndex = 2
         Me.txtBoxGauge2Label.Text = "Gauge 2"
         '
         'lblGauge2Label
@@ -159,7 +159,7 @@ Partial Class Form1
         Me.cmbBoxGauge2.Location = New System.Drawing.Point(6, 158)
         Me.cmbBoxGauge2.Name = "cmbBoxGauge2"
         Me.cmbBoxGauge2.Size = New System.Drawing.Size(177, 21)
-        Me.cmbBoxGauge2.TabIndex = 3
+        Me.cmbBoxGauge2.TabIndex = 4
         '
         'lblGauge2
         '
@@ -240,8 +240,13 @@ Partial Class Form1
         Me.Controls.Add(Me.btnControlServer)
         Me.Controls.Add(Me.grpBoxGauge1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Form1"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MyGauge"
         Me.grpBoxGauge1.ResumeLayout(False)
         Me.grpBoxGauge1.PerformLayout()
