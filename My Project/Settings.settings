@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Gauge1Label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CPU</Value>
+    </Setting>
+    <Setting Name="Gauge2Label" Type="System.String" Scope="User">
+      <Value Profile="(Default)">GPU</Value>
+    </Setting>
+    <Setting Name="Gauge1Sensor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CPU Package</Value>
+    </Setting>
+    <Setting Name="Gauge2Sensor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CPU Package</Value>
+    </Setting>
+    <Setting Name="IPAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="HostName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
