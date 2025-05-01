@@ -414,7 +414,10 @@ Public Class Form1
                     ' Set new ip
                     MessageBox.Show("The entered hostname resolves to the IP (" + gaugeIP + ").")
                     My.Settings.IPAddress = gaugeIP
+                    My.Settings.HostName = gaugeHostName
                     My.Settings.Save()
+                    statLabelHost.Text = "Host: (" + gaugeHostName + ") available at: " + gaugeIP
+                    intermittentPing = True
                     btnControlServer.Enabled = True
                 End If
             End If
