@@ -33,22 +33,23 @@ Partial Class DialogStartup
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel1.AutoSize = True
         Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.13462!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.86538!))
         Me.TableLayoutPanel1.Controls.Add(Me.YES_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.NO_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(135, 70)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(197, 70)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(270, 29)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(208, 29)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'YES_Button
         '
         Me.YES_Button.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.YES_Button.Location = New System.Drawing.Point(10, 3)
+        Me.YES_Button.Location = New System.Drawing.Point(4, 3)
         Me.YES_Button.Name = "YES_Button"
         Me.YES_Button.Size = New System.Drawing.Size(114, 23)
         Me.YES_Button.TabIndex = 0
@@ -58,7 +59,7 @@ Partial Class DialogStartup
         '
         Me.NO_Button.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.NO_Button.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.NO_Button.Location = New System.Drawing.Point(169, 3)
+        Me.NO_Button.Location = New System.Drawing.Point(132, 3)
         Me.NO_Button.Name = "NO_Button"
         Me.NO_Button.Size = New System.Drawing.Size(67, 23)
         Me.NO_Button.TabIndex = 1
@@ -88,7 +89,7 @@ Partial Class DialogStartup
         Me.MinimizeBox = False
         Me.Name = "DialogStartup"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Privilege Required"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
