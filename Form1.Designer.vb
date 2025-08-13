@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.grpBoxGauge1 = New System.Windows.Forms.GroupBox()
         Me.txtBoxGauge1Label = New System.Windows.Forms.TextBox()
         Me.lblGauge1Label = New System.Windows.Forms.Label()
@@ -241,6 +242,7 @@ Partial Class Form1
         Me.Controls.Add(Me.grpBoxGauge1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.MinimizeBox = False
