@@ -352,10 +352,12 @@ Public Class Form1
 
     Private Sub cmbBoxGauge1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBoxGauge1.SelectedIndexChanged
         gaugeOneSensor = cmbBoxGauge1.Text
+        My.Settings.Save()
     End Sub
 
     Private Sub cmbBoxGauge2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBoxGauge2.SelectedIndexChanged
         gaugeTwoSensor = cmbBoxGauge2.Text
+        My.Settings.Save()
     End Sub
 
     Public Function GetIPFromHostname(hostname As String) As String
