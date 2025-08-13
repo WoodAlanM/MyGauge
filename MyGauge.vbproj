@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B77AA5FC-680E-4640-AF55-BA852F09C157}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sub Main</StartupObject>
+    <StartupObject>MyGauge.Form1</StartupObject>
     <RootNamespace>MyGauge</RootNamespace>
     <AssemblyName>MyGauge</AssemblyName>
     <FileAlignment>512</FileAlignment>

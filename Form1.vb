@@ -172,21 +172,17 @@ Public Class Form1
                         End If
                     Next
                 End If
-            Else
-                MessageBox.Show("Unexpected error occurred.")
             End If
 
             If gpuNvidia IsNot Nothing Then
                 gpuNvidia.Update()
-                Dim gpuTempSensors = gpuAti.Sensors.Where(Function(s) s.SensorType = SensorType.Temperature).ToList()
+                Dim gpuTempSensors = gpuNvidia.Sensors.Where(Function(s) s.SensorType = SensorType.Temperature).ToList()
                 If gpuTempSensors.Count > 0 Then
                     For i As Integer = 0 To gpuTempSensors.Count - 1
                         If gpuTempSensors(i).Name = gaugeOneSensor Then
                             lblGauge1.Text = gpuTempSensors(i).Value
                         End If
                     Next
-                Else
-                    MessageBox.Show("Unexpected error occurred.")
                 End If
             End If
         End If
@@ -355,7 +351,7 @@ Public Class Form1
     End Sub
 
     Private Sub cmbBoxGauge2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBoxGauge2.SelectedIndexChanged
-        My.Settings.Save()
+        gaugeTwoSensor = cmbBoxGauge2.Text
     End Sub
 
     Public Function GetIPFromHostname(hostname As String) As String
